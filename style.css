@@ -409,3 +409,90 @@ footer ul li a {
         gap: 1rem;
     }
 }
+
+@media(max-width: 480px) {
+    header {
+        gap: 6rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    #menu-icon {
+        font-size: 1.4rem;
+    }
+
+    .nav-links {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .about-container {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .info-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .info-box span {
+        font-size: 1.5rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .grid-card {
+        padding: 1.5rem;
+    }
+
+    .input-box input {
+        padding: 1rem;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .input-box input::placeholder {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .socials {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* DARK MODE FEATURE STYLE */
+.to-dark {
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+.dark-light-icon {
+    cursor: pointer;
+}
+.dl-hamburger-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+.footer-to-dark ul li a {
+    color: white;
+}
