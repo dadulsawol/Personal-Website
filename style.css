@@ -189,8 +189,9 @@ section{
     background-color: black;
     color: white;
 }
-.grid-card i{
-    font-size: 1.5rem;
+.grid-card img{
+    height: 5vh;
+    width: 2.4vw;
     margin-bottom: 1rem;
 }
 .grid-card span{
@@ -236,7 +237,7 @@ section{
 .project-card img {
     border-radius: 1rem;
     width: 20vw; /* Limits width */
-    height: 20vw; /* Fixed height */
+    height: 40vh; /* Fixed height */
     object-fit: cover
 }
 .project-card:hover .btn {
