@@ -234,10 +234,9 @@ section{
     transform: translateY(-10px)scale(1.02);
 }
 .project-card img {
-    width: 20vw;
     border-radius: 1rem;
-    max-width: 300px; /* Limits width */
-    height: 250px; /* Fixed height */
+    width: 20vw; /* Limits width */
+    height: 20vw; /* Fixed height */
     object-fit: cover
 }
 .project-card:hover .btn {
