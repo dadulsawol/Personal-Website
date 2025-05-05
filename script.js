@@ -51,9 +51,6 @@ function handleCardClick(event) {
     else if (jobTitle === "Social Media Strategist") {
         jobDescription = "I focused on implementing strategies to maximize engagement by optimizing post timings across various platforms. I analyzed audience behavior and engagement patterns to determine the most effective times to post content, ensuring maximum reach and interaction. I monitored trends, and adjusted strategies to improve overall engagement rates, helping the brand build a stronger online presence and connect more effectively with its audience.";
     }
-    else if (jobTitle === "Social Media Coordinator" && companyName === "AWS User Group BuildHers+ Philippines") {
-        jobDescription = "I led efforts in curating engaging content across various social media platforms to enhance brand presence and audience engagement. I managed posting schedules, ensuring consistent and timely content delivery, while continuously optimizing audience interaction through performance analysis. By monitoring key metrics and trends, I developed strategies to improve content reach and engagement, ultimately driving a more active and loyal online community.";
-    }
     else if (jobTitle === "Social Media Coordinator" && companyName === "AWS Cloud Club Philippines") {
         jobDescription = "I was responsible for overseeing various social media accounts, ensuring the consistent scheduling and posting of engaging content. I actively interacted with the audience, responding to comments, messages, and inquiries to create a positive online community";
     }
