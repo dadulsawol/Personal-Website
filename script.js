@@ -132,7 +132,7 @@ function handleProjectClick(event) {
     else if (projectTitle === "QR Code Marketing KPI Dashboard") {
         projectDescription = "The QR Code Marketing KPI Dashboard project is focused on developing a centralized, real-time analytics platform to measure the effectiveness and performance of QR code-based marketing campaigns. By tracking user engagement and conversion metrics, this dashboard will provide marketing teams with actionable insights into how QR codes are driving customer interaction, brand awareness, and campaign ROI.";
     }
-    else if (projectTitle === "Kababayanrice: E-Commerce Web Application for Rice") {
+    else if (projectTitle === "Kababayanrice: E-Commerce Web Application for Rice Products") {
         projectDescription = "Kababayanrice is a user-friendly e-commerce web application specifically designed for the online sale and distribution of rice products to consumers, retailers, and bulk buyers. The platform aims to bridge the gap between local rice producers and end customers by providing a streamlined, accessible, and reliable digital marketplace.";
     }
     else if (projectTitle === "Finance Tracker Native Application") {
