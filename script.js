@@ -104,6 +104,7 @@ const projPopupCardBackBtn = document.querySelectorAll(".proj-popup-back-btn");
 function handleProjectClick(event) {
     const card = event.currentTarget;
     const projectTitle = card.querySelector("h3").textContent;
+    console.log(projectTitle)
 
     const projectPic = card.querySelector("img").src;
     const projectSkills = card.querySelector("p").textContent;
@@ -111,6 +112,34 @@ function handleProjectClick(event) {
     projPopupCard.querySelector("img").src = projectPic;
     projPopupCard.querySelector("h3").textContent = projectTitle;
     projPopupCard.querySelector(".proj-popup-skills").textContent = projectSkills;
+
+    let projectDescription = "";
+    if (projectTitle === "QCG - L&D Program Trainer Performance Monitoring") {
+        projectDescription = "The QCG L&D Program Trainer Performance Monitoring project is designed to systematically track, evaluate, and enhance the effectiveness of Learning & Development (L&D) trainers across all QCG training programs. This initiative aims to establish a standardized performance evaluation framework to ensure high-quality training delivery, promote continuous improvement, and align trainer output with organizational learning goals.";
+    }
+    else if (projectTitle === "QCG - Departmental Budget Utilization Report") {
+        projectDescription = "The QCG Departmental Budget Utilization Report project aims to create a structured and transparent reporting system that tracks, analyzes, and communicates the financial performance of each department against their allocated budgets. This initiative is designed to enhance financial accountability, optimize resource allocation, and support data-driven decision-making across QCG.";
+    }
+    else if (projectTitle === "QCG - L&D Training Effectivity Monitoring") {
+        projectDescription = "The QCG L&D Training Effectivity Monitoring project is focused on assessing the real-world impact and effectiveness of Learning & Development (L&D) programs delivered across the organization. This initiative aims to ensure that training interventions are not only well-executed but also drive measurable improvements in employee performance, knowledge retention, and overall organizational capability.";
+    }
+    else if (projectTitle === "Stockord: Inventory Management System Integrated with POS, & Procurement Systems") {
+        projectDescription = "Stockord is an integrated Inventory Management System designed to streamline stock control by synchronizing real-time data across Point of Sale (POS) systems and procurement platforms. This solution aims to provide end-to-end visibility and automation in inventory handling—from purchase to sale—enhancing operational efficiency, reducing stock discrepancies, and improving decision-making across the supply chain.";
+    }
+    else if (projectTitle === "Transportation Habits Analysis of College Students") {
+        projectDescription = "The Transportation Habits Analysis of College Students project aims to study and understand the commuting patterns, preferences, and challenges faced by college students in their daily travel to and from campus. The project seeks to collect data-driven insights into how factors such as distance, cost, accessibility, time, and environmental concerns influence students' choice of transportation modes.";
+    }
+    else if (projectTitle === "QR Code Marketing KPI Dashboard") {
+        projectDescription = "The QR Code Marketing KPI Dashboard project is focused on developing a centralized, real-time analytics platform to measure the effectiveness and performance of QR code-based marketing campaigns. By tracking user engagement and conversion metrics, this dashboard will provide marketing teams with actionable insights into how QR codes are driving customer interaction, brand awareness, and campaign ROI.";
+    }
+    else if (projectTitle === "Kababayanrice: E-Commerce Web Application for Rice") {
+        projectDescription = "Kababayanrice is a user-friendly e-commerce web application specifically designed for the online sale and distribution of rice products to consumers, retailers, and bulk buyers. The platform aims to bridge the gap between local rice producers and end customers by providing a streamlined, accessible, and reliable digital marketplace.";
+    }
+    else if (projectTitle === "Finance Tracker Native Application") {
+        projectDescription = "The Finance Tracker Native Application is a mobile-first personal finance tool designed to help users manage their income, expenses, savings, and financial goals with ease and precision. Built as a native application for Android and iOS, this app ensures seamless performance, offline accessibility, and a user-centric interface tailored for daily financial tracking.";
+    }
+
+    projPopupCard.querySelector(".job-explanation").textContent = projectDescription;
 
     projPopupCard.style.display = "flex";
 }
@@ -131,4 +160,23 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         projPopupCard.style.display = "none";
     }
+});
+
+
+// Mouse Zoom effect on hover
+document.querySelectorAll('.proj-popup-card .company-info').forEach(container => {
+    const img = container.querySelector('img');
+
+    img.addEventListener('mousemove', (e) => {
+        const rect = img.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        img.style.transformOrigin = `${x}% ${y}%`;
+        img.style.transform = 'scale(4)';
+    });
+
+    img.addEventListener('mouseleave', () => {
+        img.style.transformOrigin = 'center center';
+        img.style.transform = 'scale(1)';
+    });
 });

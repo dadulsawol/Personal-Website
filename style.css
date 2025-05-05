@@ -223,7 +223,7 @@ section{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    gap: 1.5rem;
+    gap: 1rem;
     border: 2px solid black;
     border-radius: 3rem;
     cursor: pointer;
@@ -234,11 +234,18 @@ section{
     color: white;
     transform: translateY(-10px)scale(1.02);
 }
+.project-card-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
 .project-card img {
     border-radius: 1rem;
-    width: 20vw; /* Limits width */
-    height: 40vh; /* Fixed height */
-    object-fit: cover
+    width: 100%; /* Limits width */
+    height: 100%; /* Fixed height */
+    object-fit: cover;
 }
 .project-card:hover .btn {
     border: 2px solid white;
@@ -401,7 +408,7 @@ footer ul li a {
     height: 70vh;
     margin-top: 10vh;
 }
-.proj-popup-back-btn-container .proj    -popup-back-btn {
+.proj-popup-back-btn-container .proj-popup-back-btn {
     font-size: 2.6vw;
 }
 .proj-popup-card {
@@ -429,8 +436,14 @@ footer ul li a {
     text-align: center;
 }
 .proj-popup-card .company-info img {
-    height: 10vh;
-    width: 10vh;
+    height: auto;
+    width: 30vh;
+    transition: transform 0.3s ease, transform-origin 0.3s ease;
+    cursor: zoom-in;
+}
+.proj-popup-card .company-info .hover-msg {
+    font-size: .8rem;
+    font-style: italic;
 }
 .proj-popup-card .job-description {
     display: flex;
