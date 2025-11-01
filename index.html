@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>April Joy Deang | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Decorative Background Elements -->
+    <div class="vintage-overlay"></div>
+    <div class="grain-texture"></div>
+    
+    <!-- Floating Decorative Elements -->
+    <div class="decorative-stars">
+        <svg class="star star-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2 L14 8 L20 9 L15 13 L17 19 L12 16 L7 19 L9 13 L4 9 L10 8 Z" fill="currentColor" opacity="0.15"/>
+        </svg>
+        <svg class="star star-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2 L14 8 L20 9 L15 13 L17 19 L12 16 L7 19 L9 13 L4 9 L10 8 Z" fill="currentColor" opacity="0.12"/>
+        </svg>
+        <svg class="star star-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2 L14 8 L20 9 L15 13 L17 19 L12 16 L7 19 L9 13 L4 9 L10 8 Z" fill="currentColor" opacity="0.1"/>
+        </svg>
+    </div>
+    
+    <div class="decorative-moons">
+        <svg class="moon moon-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3C7 3 3 7 3 12C3 17 7 21 12 21C16 21 19 18 20 14C19 15 17 15 15 13C13 11 13 8 13 6C13 4 13 3 12 3Z" fill="currentColor" opacity="0.08"/>
+        </svg>
+        <svg class="moon moon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3C7 3 3 7 3 12C3 17 7 21 12 21C16 21 19 18 20 14C19 15 17 15 15 13C13 11 13 8 13 6C13 4 13 3 12 3Z" fill="currentColor" opacity="0.06"/>
+        </svg>
+    </div>
+    
+    <div class="decorative-clouds">
+        <svg class="cloud cloud-1" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 25C20 25 15 30 15 35C15 40 20 45 25 45H75C80 45 85 40 85 35C85 30 80 25 75 25C73 20 68 17 62 17C56 17 51 20 49 25H25Z" fill="currentColor" opacity="0.1"/>
+        </svg>
+        <svg class="cloud cloud-2" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 25C20 25 15 30 15 35C15 40 20 45 25 45H75C80 45 85 40 85 35C85 30 80 25 75 25C73 20 68 17 62 17C56 17 51 20 49 25H25Z" fill="currentColor" opacity="0.08"/>
+        </svg>
+    </div>
+    
     <header class="header">
         <a href="#about" class="logo"><span>April Joy Deang</span></a>
         <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="dl-hamburger-container">
@@ -38,24 +67,27 @@
 
     <section id="about" class="about">
         <div class="about-container">
-            <img src="assets/img1.jpg" alt="">
+            <div class="about-image-wrapper">
+                <div class="image-frame"></div>
+                <img src="assets/img1.jpg" alt="April Joy Deang">
+            </div>
         
             <div class="info-box">
                 <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>April Joy</h1>
-                    <h6>aka dadul</h6>
-                    <span>Technical Support Engineer</span>
-                    <p>Hi there! I'm April, I am currently working as a 
+                    <h3 class="greeting">Hi, I'm</h3>
+                    <h1 class="name">April Joy</h1>
+                    <h6 class="nickname">aka dadul</h6>
+                    <span class="role">Technical Support Engineer</span>
+                    <p class="bio">Hi there! I'm April, I am currently working as a 
                         Technical Support Engineer at ValueLine, where 
                         I handle AWS Cloud-related tasks, including 
                         troubleshooting, configuration, and system support.</p>
-                    <h16>Let's Connect!</h6>
+                    <h6 class="connect-title">Let's Connect!</h6>
                 </div>
 
                 <div class="btn-group">
                     <a href="https://drive.google.com/file/d/1xJ0KwjVQA8QAEjwomYvfg6DFI2OeAuMu/view" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="btn">
+                        <div class="btn btn-primary">
                             <i class="fa fa-file-text" aria-hidden="true"></i>
                             Resume
                         </div>
@@ -63,101 +95,266 @@
                 </div>
 
                 <div class="socials">
-                    <a href="https://github.com/dadulsawol" target="_blank" style="text-decoration: none; color: inherit;">
+                    <a href="https://github.com/dadulsawol" target="_blank" class="social-link" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-
-                    <a href="https://www.linkedin.com/in/april-joy-d-1b83462b9/" target="_blank" style="text-decoration: none; color: #0077B5;">
+                    <a href="https://www.linkedin.com/in/april-joy-d-1b83462b9/" target="_blank" class="social-link" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
 
-                <!--
-                https://hitscounter.dev/
-                -->
-                <img src="https://hitscounter.dev/api/hit?url=ajdportfolio.netlify.app&label=Visits&icon=eye&color=%23e685b5"
-                style="
-                    border-radius: 5px;
-                    height: 15%;
-                    width: 25%;"
-                >
+                <div class="visitor-counter-wrapper">
+                    <div class="visitor-counter-badge" id="visitor-counter">
+                        <span class="visitor-icon">👁️</span>
+                        <span class="visitor-count" id="visitor-count">Loading...</span>
+                        <span class="visitor-text">visitors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <div class="decorative-elements">
+                <svg class="decorative-star small-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2 L14 8 L20 9 L17 14 L18 21 L12 18 L6 21 L7 14 L2 9 L9 8 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+                </svg>
+            </div>
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="title-decoration"></div>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Cloud Infrastructure</span>
+                    <span class="skill-tag">Troubleshooting</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-code"></i> Programming</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-chart-line"></i> Data Analytics</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Pandas</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-database"></i> Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-palette"></i> Design & Media</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Social Media Strategy</span>
+                    <span class="skill-tag">Content Creation</span>
+                    <span class="skill-tag">Creative Design</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="experience" class="experience">
+        <div class="section-header">
+            <div class="decorative-elements">
+                <svg class="decorative-corner top-left" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0 L50 0 L50 50 Q25 25 0 50 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                    <circle cx="10" cy="10" r="2" fill="currentColor" opacity="0.4"/>
+                </svg>
+                <svg class="decorative-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2 L15 8 L22 9 L17 14 L18 21 L12 18 L6 21 L7 14 L2 9 L9 8 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+                </svg>
+            </div>
+            <h2 class="section-title">Experience</h2>
+            <div class="title-decoration"></div>
+            <p class="section-subtitle">Professional journey & community contributions</p>
+        </div>
 
-        <h2 class="section-title">Experience</h2>
+        <div class="experience-filter">
+            <button class="filter-btn active" data-filter="professional">
+                <i class="fa-solid fa-briefcase"></i>
+                Professional
+            </button>
+            <button class="filter-btn" data-filter="volunteering">
+                <i class="fa-solid fa-heart"></i>
+                Volunteering
+            </button>
+        </div>
 
         <div class="experience-info">
-            <div class="grid">
-                <div class="grid-card">
-                    <img src="assets/experiences/kmc.jpg">
-                    <span>KMC Solutions</span>
-                    <h3>IT On-Site-Support</h3>
-                    <p>(Mar 2025 - May 2025)</p>
+            <div class="grid" id="experience-grid">
+                <!-- Professional Experience -->
+                <div class="grid-card polaroid-card" data-type="professional">
+                    <div class="tape tape-top-left"></div>
+                    <div class="tape tape-top-right"></div>
+                    <div class="sparkle sparkle-1">✨</div>
+                    <div class="sparkle sparkle-2">⭐</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/qcg.jpg" alt="Valueline Systems & Solutions Corp" onerror="this.style.display='none'">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">Valueline Systems & Solutions Corp</span>
+                            <h3>Technical Support Engineer</h3>
+                            <p class="exp-type"><i class="fa-solid fa-briefcase"></i> Full-time</p>
+                            <p class="exp-date">Jul 2025 – Present</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-card">
-                    <img src="assets/experiences/gradhawks.jpg">
-                    <span>TUP Gradhawks</span>
-                    <h3>Head, Finance</h3>
-                    <p>(Feb 2025 - Present)</p>
+                <div class="grid-card polaroid-card" data-type="professional">
+                    <div class="tape tape-top-left"></div>
+                    <div class="sparkle sparkle-1">✨</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/kmc.jpg" alt="KMC Solutions">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">KMC Solutions</span>
+                            <h3>IT OSS Intern</h3>
+                            <p class="exp-type"><i class="fa-solid fa-briefcase"></i> Internship</p>
+                            <p class="exp-date">Mar 2025 – May 2025</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-card">
-                    <img src="assets/experiences/pythonph.jpg">
-                    <span>Python Philippines</span>
-                    <h3>Finance Ticketing & Receipts</h3>
-                    <p>(Nov 2024 - Present)</p>
+                <div class="grid-card polaroid-card" data-type="professional">
+                    <div class="tape tape-top-right"></div>
+                    <div class="sparkle sparkle-2">⭐</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/qcg.jpg" alt="Quezon City Government">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">Quezon City Government</span>
+                            <h3>Data Analyst Intern</h3>
+                            <p class="exp-type"><i class="fa-solid fa-briefcase"></i> Internship</p>
+                            <p class="exp-date">Nov 2024 – Feb 2025</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-card">
-                    <img src="assets/experiences/awsbhp.jpg">
-                    <span>AWS User Group BuildHers+ Philippines</span>
-                    <h3>Social Media Strategist</h3>
-                    <p>(Mar 2025 - Present)</p>
+                <!-- Volunteering Experience -->
+                <div class="grid-card polaroid-card" data-type="volunteering">
+                    <div class="tape tape-top-left"></div>
+                    <div class="sparkle sparkle-1">💕</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/awsbhp.jpg" alt="AWS BuildHers+ Philippines">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">AWS User Group BuildHers+ Philippines</span>
+                            <h3>Social Media Strategist</h3>
+                            <p class="exp-type"><i class="fa-solid fa-heart"></i> Volunteer</p>
+                            <p class="exp-date">Feb 2025 – Present</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-card">
-                    <img src="assets/experiences/awsccph.jpg">
-                    <span>AWS Cloud Club Philippines</span>
-                    <h3>Social Media Coordinator</h3>
-                    <p>(Mar 2025 - Present)</p>
+                <div class="grid-card polaroid-card" data-type="volunteering">
+                    <div class="tape tape-top-right"></div>
+                    <div class="sparkle sparkle-2">✨</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/pythonph.jpg" alt="Python Philippines">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">Python Philippines (PythonPH)</span>
+                            <h3>Finance and Ticketing Volunteer</h3>
+                            <p class="exp-type"><i class="fa-solid fa-heart"></i> Volunteer</p>
+                            <p class="exp-date">Nov 2024 – Present</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-card">
-                    <img src="assets/experiences/gdgoc.jpg">
-                    <span>Google Developer Groups on Campus</span>
-                    <h3>Social Media Relations Lead</h3>
-                    <p>(Oct 2024 - Present)</p>
+                <div class="grid-card polaroid-card" data-type="volunteering">
+                    <div class="tape tape-top-left"></div>
+                    <div class="sparkle sparkle-1">⭐</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/gdgoc.jpg" alt="GDG on Campus">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">Google Developer Groups on Campus – TUP Manila</span>
+                            <h3>Social Media Relations Lead</h3>
+                            <p class="exp-type"><i class="fa-solid fa-heart"></i> Volunteer</p>
+                            <p class="exp-date">Oct 2024 – Aug 2025</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-card">
-                    <img src="assets/experiences/pcsmst.jpg">
-                    <span>Philippine Consortium for Science, Mathematics, and Technology - TUP Manila Student Chapter</span>
-                    <h3>Creatives Committee</h3>
-                    <p>(Mar 2025 - Present)</p>
+                <div class="grid-card polaroid-card" data-type="volunteering">
+                    <div class="tape tape-top-right"></div>
+                    <div class="sparkle sparkle-2">💫</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/pcsmst.jpg" alt="PCSMST">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">Philippine Consortium for Science, Mathematics, and Technology – TUP Manila Student Chapter</span>
+                            <h3>Creative Assistant</h3>
+                            <p class="exp-type"><i class="fa-solid fa-heart"></i> Volunteer</p>
+                            <p class="exp-date">Nov 2024 – Aug 2025</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-card">
-                    <img src="assets/experiences/qcg.jpg">
-                    <span>Quezon City Government</span>
-                    <h3>Data Analyst</h3>
-                    <p>(Nov 2024 - Feb 2025)</p>
+                <div class="grid-card polaroid-card" data-type="volunteering">
+                    <div class="tape tape-top-left"></div>
+                    <div class="sparkle sparkle-1">✨</div>
+                    <div class="polaroid-inner">
+                        <div class="polaroid-image-container">
+                            <img src="assets/experiences/gradhawks.jpg" alt="Gradhawks">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="company-name">Gradhawks: Graduation Committee</span>
+                            <h3>Head of Finance</h3>
+                            <p class="exp-type"><i class="fa-solid fa-heart"></i> Volunteer</p>
+                            <p class="exp-date">Feb 2025 – Aug 2025</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title">Recent Projects</h2>
+        <div class="section-header">
+            <div class="decorative-elements">
+                <svg class="decorative-star small-star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2 L14 8 L20 9 L17 14 L18 21 L12 18 L6 21 L7 14 L2 9 L9 8 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+                </svg>
+            </div>
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="title-decoration"></div>
+        </div>
 
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project6.png" alt="img">
+                    <img src="assets/projects/project6.png" alt="QCG Trainer Performance Monitoring">
                 </div>
                 <div class="project-summary-container">
                     <h3>QCG - L&D Program Trainer Performance Monitoring</h3>
@@ -169,30 +366,36 @@
 
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project7.png" alt="img">
+                    <img src="assets/projects/project7.png" alt="QCG Budget Report">
                 </div>
-                <h3>QCG - Departmental Budget Utilization Report</h3>
-                <p>Data Analytics, MS Excel, Python</p>
+                <div class="project-summary-container">
+                    <h3>QCG - Departmental Budget Utilization Report</h3>
+                    <p>Data Analytics, MS Excel, Python</p>
+                </div>
                 <div class="btn-group">
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project5.png" alt="img">
+                    <img src="assets/projects/project5.png" alt="QCG Training Monitoring">
                 </div>
-                <h3>QCG - L&D Training Effectivity Monitoring</h3>
-                <p>Data Analytics, MS Excel, Python</p>
+                <div class="project-summary-container">
+                    <h3>QCG - L&D Training Effectivity Monitoring</h3>
+                    <p>Data Analytics, MS Excel, Python</p>
+                </div>
                 <div class="btn-group">
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project9.png" alt="img">
+                    <img src="assets/projects/project9.png" alt="Stockord">
                 </div>
-                <h3>Stockord: Inventory Management System Integrated with POS, & Procurement Systems</h3>
-                <p>Python, Django, PostgreSQL, Matplotlib, NumPy, HTML, CSS</p>
+                <div class="project-summary-container">
+                    <h3>Stockord: Inventory Management System Integrated with POS, & Procurement Systems</h3>
+                    <p>Python, Django, PostgreSQL, Matplotlib, NumPy, HTML, CSS</p>
+                </div>
                 <div class="btn-group">
                     <a href="https://github.com/ImYokaii/IMS-POS" target="_blank" style="text-decoration: none; color: inherit;">
                         <div class="btn">Git</div>
@@ -202,30 +405,36 @@
 
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project1.png" alt="img">
+                    <img src="assets/projects/project1.png" alt="Transportation Analysis">
                 </div>
-                <h3>Transportation Habits Analysis of College Students</h3>
-                <p>Data Analytics, MS Excel</p>
+                <div class="project-summary-container">
+                    <h3>Transportation Habits Analysis of College Students</h3>
+                    <p>Data Analytics, MS Excel</p>
+                </div>
                 <div class="btn-group">
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project4.png" alt="img">
+                    <img src="assets/projects/project4.png" alt="QR Code Dashboard">
                 </div>
-                <h3>QR Code Marketing KPI Dashboard</h3>
-                <p>Data Analytics, MS Excel</p>
+                <div class="project-summary-container">
+                    <h3>QR Code Marketing KPI Dashboard</h3>
+                    <p>Data Analytics, MS Excel</p>
+                </div>
                 <div class="btn-group">
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project3.png" alt="img">
+                    <img src="assets/projects/project3.png" alt="Kababayanrice">
                 </div>
-                <h3>Kababayanrice: E-Commerce Web Application for Rice Products</h3>
-                <p>Django Framework, Python, NumPy, Matplotlib, HTML, CSS, Render</p>
+                <div class="project-summary-container">
+                    <h3>Kababayanrice: E-Commerce Web Application for Rice Products</h3>
+                    <p>Django Framework, Python, NumPy, Matplotlib, HTML, CSS, Render</p>
+                </div>
                 <div class="btn-group">
                     <a href="https://github.com/SandorTheMoon/KababayanRice_E-Commerce-App" target="_blank" style="text-decoration: none; color: inherit;">
                         <div class="btn">Git</div>
@@ -235,10 +444,12 @@
     
             <div class="project-card">
                 <div class="project-card-img-container">
-                    <img src="assets/projects/project2.png" alt="img">
+                    <img src="assets/projects/project2.png" alt="Finance Tracker">
                 </div>
-                <h3>Finance Tracker Native Application</h3>
-                <p>Python, Tkinter, Matplotlib, Numpy, Pandas</p>
+                <div class="project-summary-container">
+                    <h3>Finance Tracker Native Application</h3>
+                    <p>Python, Tkinter, Matplotlib, Numpy, Pandas</p>
+                </div>
                 <div class="btn-group">
                     <a href="https://github.com/SandorTheMoon/Expense-Tracker-App-Python-tkinter-" target="_blank" style="text-decoration: none; color: inherit;">
                         <div class="btn">Git</div>
@@ -248,56 +459,94 @@
         </div>
     </section>
 
+    <section id="blog" class="blog">
+        <div class="section-header">
+            <h2 class="section-title">Blog</h2>
+            <div class="title-decoration"></div>
+            <p class="section-subtitle">Thoughts, insights, and stories from my journey</p>
+        </div>
+
+        <div class="blog-container" id="blog-container">
+            <!-- Blog posts will be dynamically added here -->
+            <!-- You can easily add new posts by adding objects to the blogPosts array in script.js -->
+        </div>
+    </section>
+
     <section class="contact" id="contact">
-        <div class="input-box">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-decoration"></div>
+            <p class="section-subtitle">Let's connect and create something amazing together!</p>
+        </div>
 
-            <h2 class="section-title">Contact Me</h2>
-
-            <div class="input">
-                <input class="text" placeholder="deang.apriljoy0923@gmail.com" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
-                <i class="fa-solid fa-envelope"></i>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:deang.apriljoy0923@gmail.com">deang.apriljoy0923@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/april-joy-d-1b83462b9/" target="_blank">Connect with me</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/dadulsawol" target="_blank">View my work</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="btn">Submit</div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
         </div>
     </section>
 
     <footer>
-
         <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
-        <p class="copyright">© All Rights Reserved | April Joy Deang</p>
+        <p class="copyright">© 2025 All Rights Reserved | April Joy Deang</p>
     </footer>
-
 
     <!--Experiences On Click Pop Up-->
     <div class="exp-popup-container">
         <div class="exp-popup-back-btn-container">
             <i class="fa-regular fa-circle-xmark exp-popup-back-btn" style="cursor: pointer;"></i>
         </div>
-
         <div class="exp-popup-card">
             <div class="company-info">
-                <img src="" class="company-img">
+                <img src="" class="company-img" alt="">
                 <h3 class="company-name"></h3>
             </div>
-
             <div class="job-description">
                 <h3 class="job-title"></h3>
                 <p class="job-explanation"></p>
@@ -310,15 +559,13 @@
         <div class="proj-popup-back-btn-container">
             <i class="fa-regular fa-circle-xmark proj-popup-back-btn" style="cursor: pointer;"></i>
         </div>
-
         <div class="proj-popup-card">
             <div class="company-info">
-                <img src="" class="company-img">
+                <img src="" class="company-img" alt="">
                 <p class="hover-msg">(hover your mouse to the image)</p>
                 <h3 class="company-name"></h3>
                 <p class="proj-popup-skills"></p>
             </div>
-
             <div class="job-description">
                 <h3 class="job-title">Project Description</h3>
                 <p class="job-explanation"></p>
