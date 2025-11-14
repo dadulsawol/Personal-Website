@@ -4,22 +4,16 @@
 // To add a new blog post, simply add a new object to this array!
 const blogPosts = [
     {
-        date: "January 15, 2025",
-        title: "My Journey into AWS Cloud Engineering",
-        excerpt: "Starting my career as a Technical Support Engineer has opened up amazing opportunities to work with cloud infrastructure. Here's what I've learned so far about AWS services and troubleshooting...",
-        link: "#"
+        date: "November 11, 2025",
+        title: "Mastering AWS Made Easy: A Beginner’s Guide to the Knowledge MCP Server",
+        excerpt: "Empower your AI with AWS Knowledge MCP Server. Instantly access AWS docs, APIs, and best practices to build smarter, faster, and more reliable architectures.",
+        link: "https://tutorialsdojo.com/mastering-aws-made-easy-a-beginners-guide-to-the-knowledge-mcp-server/"
     },
     {
-        date: "December 20, 2024",
-        title: "Data Analytics: Transforming Raw Data into Insights",
+        date: "November 11, 2025",
+        title: "How Model Context Protocol (MCP) Servers Powered Modern Large Language Models (LLMs)",
         excerpt: "Working with the Quezon City Government showed me how powerful data analytics can be when making decisions. From SQL queries to Excel dashboards, here's my approach...",
-        link: "#"
-    },
-    {
-        date: "November 10, 2024",
-        title: "Building My First Full-Stack Application",
-        excerpt: "The Stockord project taught me so much about Django, PostgreSQL, and integrating multiple systems. Learn about the challenges and triumphs of building an inventory management system...",
-        link: "#"
+        link: "https://tutorialsdojo.com/how-model-context-protocol-mcp-servers-powered-modern-large-language-models-llms/"
     }
     // Add more blog posts here by following the same format:
     // {
